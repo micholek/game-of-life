@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Zagraj se w życie</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <div id="content">
+      <div id="controls">
+        <div>
+          <label for="interval_time">Interval time (ms)</label>
+          <input
+            id="interval_time"
+            name="interval_time"
+            type="number"
+            min="0"
+          />
+        </div>
+        <div>
+          <label for="presets">Presets</label>
+          <select id="presets" name="presets"></select>
+        </div>
+        <button id="start">Start</button>
+        <button id="pause">Pause</button>
+        <button id="stop">Stop</button>
+      </div>
+      <div id="cells">
+        <canvas id="canvas"></canvas>
+        <span>Generation number: <span id="generation_number"></span>
+      </div>
+    </div>
+  </body>
+</html>
