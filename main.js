@@ -175,15 +175,13 @@ class Game {
     }
   }
 
-  async start() {
+  start() {
     if ([GameState.Pause, GameState.Stop].includes(this.state)) {
-      if ([GameState.Pause, GameState.Stop].includes(this.state)) {
-        this.state = GameState.Play;
-        this.interval_id = setInterval(() => {
-          game.update();
-          game.draw();
-        }, this.interval_time);
-      }
+      this.state = GameState.Play;
+      this.interval_id = setInterval(() => {
+        game.update();
+        game.draw();
+      }, this.interval_time);
     }
   }
 
