@@ -36,7 +36,7 @@ const CellState = Object.freeze({ Alive: 1, Dead: 2 });
 class Cell {
   constructor(x, y, width) {
     this.dead_cell_color = 'rgb(222, 221, 217)';
-    this.alive_cell_color = 'rgb(237, 245, 69)';
+    this.alive_cell_color = 'rgb(248, 255, 31)';
     this.cell_color = this.dead_cell_color;
     this.border_color = 'rgb(242, 241, 237)';
     this.interval_id = null;
